@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "analyze": "ANALYZE=true next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
@@ -19,11 +20,13 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
-    "@mantine/core": "7.12.2",
+    "@mantine/core": "^7.13.0",
     "@mantine/hooks": "7.12.2",
     "@next/bundle-analyzer": "^14.2.4",
+    "@portabletext/react": "^3.1.0",
+    "@sanity/client": "^6.22.0",
     "@tabler/icons-react": "^3.6.0",
-    "next": "14.2.4",
+    "next": "^14.2.13",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },

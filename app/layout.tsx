@@ -3,6 +3,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
+import { HeaderSearch } from '@/components/HeaderSearch/HeaderSearch';
 
 export const metadata = {
   title: 'Mantine Next.js template',
@@ -21,7 +22,10 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <HeaderSearch />
+          {children}
+        </MantineProvider>
       </body>
     </html>
   );
