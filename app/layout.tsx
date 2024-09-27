@@ -6,8 +6,8 @@ import { theme } from '../theme';
 import { HeaderSearch } from '@/components/HeaderSearch/HeaderSearch';
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'Woodbridge Table Tennis Club',
+  description: 'Woodbridge Table Tennis Club',
 };
 
 export default function RootLayout({ children }: { children: any }) {
