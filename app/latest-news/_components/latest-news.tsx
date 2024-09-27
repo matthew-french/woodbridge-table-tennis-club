@@ -1,6 +1,6 @@
 import React from 'react'
 import { PortableText } from '@portabletext/react'
-import { sanity } from '../../lib/sanity'
+import { client } from '@/lib/client'
 import { unstable_cache } from 'next/cache'
 
 
@@ -38,7 +38,7 @@ const getLatestNews = unstable_cache(
       title,
       body
     }`
-    const data = await sanity.fetch(query)
+    const data = await client.fetch(query)
 
     return data || []
   },
