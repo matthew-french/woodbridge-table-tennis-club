@@ -1,8 +1,11 @@
 /** @type {import("@ianvs/prettier-plugin-sort-imports").PrettierConfig} */
 const config = {
   printWidth: 100,
-  singleQuote: true,
   trailingComma: 'es5',
+  semi: false,
+  tabWidth: 2,
+  singleQuote: true,
+  jsxSingleQuote: true,
   plugins: ['@ianvs/prettier-plugin-sort-imports'],
   importOrder: [
     '.*styles.css$',
@@ -26,7 +29,12 @@ const config = {
     {
       files: '*.mdx',
       options: {
-        printWidth: 70,
+        printWidth: 100,
+        trailingComma: 'es5',
+        semi: false,
+        tabWidth: 2,
+        singleQuote: true,
+        jsxSingleQuote: true,
       },
     },
   ],

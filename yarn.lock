@@ -2626,6 +2626,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sanity/image-url@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@sanity/image-url@npm:1.0.2"
+  checksum: 10c0/594491142e37b7ed468d21749a633e0e797ff19d4a8af893302390fbd6f777ce3c0700c2dca11d01daebaf6a75a8c06c394c516e669a4f0495f593f3bf633d7b
+  languageName: node
+  linkType: hard
+
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8
   resolution: "@sinclair/typebox@npm:0.27.8"
@@ -9648,6 +9655,7 @@ __metadata:
     "@next/eslint-plugin-next": "npm:^14.2.4"
     "@portabletext/react": "npm:^3.1.0"
     "@sanity/client": "npm:^6.22.0"
+    "@sanity/image-url": "npm:^1.0.2"
     "@storybook/addon-essentials": "npm:^8.1.10"
     "@storybook/addon-styling-webpack": "npm:^1.0.0"
     "@storybook/blocks": "npm:^8.1.10"

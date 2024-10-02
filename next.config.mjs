@@ -5,8 +5,8 @@ const withBundleAnalyzer = bundleAnalyzer({
 });
 
 export default withBundleAnalyzer({
-  output: 'export',
-  distDir: 'dist',
+  // output: 'export',
+  // distDir: 'dist',
   trailingSlash: true,
   reactStrictMode: false,
   eslint: {

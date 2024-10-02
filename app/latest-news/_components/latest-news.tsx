@@ -1,8 +1,8 @@
 import React from 'react'
-import { PortableText } from '@portabletext/react'
-import { client } from '@/lib/client'
 import { unstable_cache } from 'next/cache'
-
+import { PortableText } from '@portabletext/react'
+import { Container, Loader, Paper, Text, Title } from '@mantine/core'
+import { client } from '@/lib/client'
 
 interface NewsItem {
   _id: string
@@ -13,21 +13,24 @@ interface NewsItem {
 export async function LatestNews() {
   const news = await getLatestNews()
 
-
   if (!news) {
-    return <div>Loading...</div>
+    return (
+      <Container>
+        <Loader />
+      </Container>
+    )
   }
 
   return (
-    <div>
-      <h1>News</h1>
+    <Container>
+      <Title order={1}>News</Title>
       {news.map((item: NewsItem) => (
-        <div key={item._id}>
-          <h2>{item.title}</h2>
+        <Paper key={item._id} shadow='sm' withBorder>
+          <Title order={2}>{item.title}</Title>
           <PortableText value={[...item.body]} />
-        </div>
+        </Paper>
       ))}
-    </div>
+    </Container>
   )
 }
 
@@ -42,6 +45,6 @@ const getLatestNews = unstable_cache(
 
     return data || []
   },
-  ['lastest-news'],
+  ['latest-news'],
   { revalidate: 1 }
 )

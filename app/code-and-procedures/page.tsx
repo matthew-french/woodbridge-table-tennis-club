@@ -1,8 +1,10 @@
+import { Title } from '@mantine/core'
+
 export default function CodeAndProcedures() {
   return (
-    <div>
-      <h1>Code And Procedures</h1>
+    <>
+      <Title order={1}>Code And Procedures</Title>
       <p>This is a page.</p>
-    </div>
-  );
+    </>
+  )
 }

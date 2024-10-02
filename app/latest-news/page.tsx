@@ -1,5 +1,4 @@
 import { Suspense } from 'react'
-
 import { LatestNews } from '@/app/latest-news/_components/latest-news'
 
 export default function News() {
@@ -11,4 +10,3 @@ export default function News() {
     </>
   )
 }
-

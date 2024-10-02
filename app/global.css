@@ -1,0 +1,15 @@
+/* stylelint-disable-next-line selector-id-pattern */
+html, body, #__next, .wrapper {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+}
