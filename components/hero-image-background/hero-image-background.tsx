@@ -33,7 +33,7 @@ export async function HeroImageBackground() {
       <div className={classes.inner}>
 
         { title && 
-          <Title className={classes.title}>{title}</Title>
+          <Text inherit className={classes.title} variant='gradient' component='span' gradient={{ from: 'red', to: 'blue' }}>{title}</Text>
         }
 
         { subtitle && 

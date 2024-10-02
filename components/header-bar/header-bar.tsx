@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import NextLink from 'next/link'
-import { Burger, Container, Drawer, Group, rem, ScrollArea } from '@mantine/core'
+import { Burger, Container, Drawer, Group, List, rem, ScrollArea } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { navigationLinks } from '@/config/links'
 import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle'
@@ -82,7 +82,11 @@ export function HeaderBar() {
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx='-md'>
           Items?
           <Group wrap='nowrap' align='flex-start'>
-            {items}
+            <List>
+              <List.Item>Item 1</List.Item>
+              <List.Item>Item 2</List.Item>
+              <List.Item>Item 3</List.Item>
+            </List>
           </Group>
           No Items
         </ScrollArea>
