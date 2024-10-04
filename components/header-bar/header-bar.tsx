@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 import { Burger, Container, Drawer, Group, List, rem, ScrollArea } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { navigationLinks } from '@/config/links'
-import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle'
+// import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle'
 import classes from './header-bar.module.css'
 
 export function HeaderBar() {
@@ -22,7 +22,7 @@ export function HeaderBar() {
       <header className={classes.header}>
         <Container size='xl' visibleFrom='sm'>
           <div className={classes.top}>
-            <Group >
+            <Group>
               <NextLink href='/' passHref>
                 <Image
                   className={classes.logo}
@@ -80,7 +80,6 @@ export function HeaderBar() {
         transitionProps={{ transition: 'slide-right', duration: 175, timingFunction: 'linear' }}
       >
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx='-md'>
-          Items?
           <Group wrap='nowrap' align='flex-start'>
             <List>
               <List.Item>Item 1</List.Item>
@@ -88,7 +87,6 @@ export function HeaderBar() {
               <List.Item>Item 3</List.Item>
             </List>
           </Group>
-          No Items
         </ScrollArea>
       </Drawer>
     </>
