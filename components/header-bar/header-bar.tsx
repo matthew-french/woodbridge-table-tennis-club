@@ -4,18 +4,11 @@ import Image from 'next/image'
 import NextLink from 'next/link'
 import { Burger, Container, Drawer, Group, List, rem, ScrollArea } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-import { navigationLinks } from '@/config/links'
-// import { ColorSchemeToggle } from '../ColorSchemeToggle/ColorSchemeToggle'
+import Navigation from '@/components/navigation/navigation'
 import classes from './header-bar.module.css'
 
 export function HeaderBar() {
   const [opened, { open, close }] = useDisclosure(false)
-
-  const items = navigationLinks.map((link) => (
-    <NextLink key={link.label} href={link.link} className={classes.link}>
-      {link.label}
-    </NextLink>
-  ))
 
   return (
     <>
@@ -57,7 +50,7 @@ export function HeaderBar() {
 
               <Group visibleFrom='sm'>
                 <Group ml={0} gap={5} className={classes.links}>
-                  {items}
+                  <Navigation />
                 </Group>
               </Group>
 

@@ -59,7 +59,7 @@ export function FooterBar() {
 
   return (
     <footer className={classes.footer}>
-      <Container size='xxl' className={classes.inner}>
+      <Container size='xl' className={classes.inner}>
         <div className={classes.logo}>
           {/* <MantineLogo size={30} /> */}
           <Text size='xs' c='dimmed' className={classes.description}>

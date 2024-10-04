@@ -22,7 +22,7 @@
 
 .inner {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+30,207cca+65,7db9e8+100 */
-  background: linear-gradient(45deg,  #1e5799 0%,#2989d8 30%,#207cca 65%,#7db9e8 100%);
+  background: linear-gradient(45deg, #1e5799 0%, #2989d8 30%, #207cca 65%, #7db9e8 100%);
 
   @media (max-width: $mantine-breakpoint-sm) {
     background: none;
@@ -47,21 +47,5 @@
   @media (max-width: $mantine-breakpoint-sm) {
     margin-left: rem(30px);
     width: rem(200px);
-  }
-}
-
-.link {
-  display: block;
-  line-height: 1;
-  padding: rem(8px) rem(12px);
-  border-radius: var(--mantine-radius-sm);
-  text-decoration: none;
-  color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-0));
-  font-size: var(--mantine-font-size-md);
-  font-weight: 500;
-
-  @mixin hover {
-    /* background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6)); */
-    border-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
   }
 }

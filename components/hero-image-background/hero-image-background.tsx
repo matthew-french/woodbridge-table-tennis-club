@@ -1,8 +1,8 @@
+import { unstable_cache } from 'next/cache'
 import cx from 'clsx'
 import { Button, Container, Overlay, Text, Title } from '@mantine/core'
-import classes from './hero-image-background.module.css'
-import { unstable_cache } from 'next/cache'
 import { client, urlFor } from '@/lib/client'
+import classes from './hero-image-background.module.css'
 
 interface HeroItem {
   _id: string
@@ -18,27 +18,31 @@ export async function HeroImageBackground() {
 
   // randomly select one of the hero items
   const randomIndex = Math.floor(Math.random() * heroItems.length)
-  
+
   const { image, title, subtitle } = heroItems[randomIndex]
 
   const backgroundStyle = {
     backgroundImage: `url(${urlFor(image)})`,
   }
 
-
   return (
     <div className={classes.wrapper} style={backgroundStyle}>
       <Overlay color='#000' opacity={0.65} zIndex={1} />
 
       <div className={classes.inner}>
+        {title && (
+          <Text
+            inherit
+            className={classes.title}
+            // variant='gradient'
+            // component='span'
+            // gradient={{ from: 'white', to: '#F21616' }}
+          >
+            {title}
+          </Text>
+        )}
 
-        { title && 
-          <Text inherit className={classes.title} variant='gradient' component='span' gradient={{ from: 'red', to: 'blue' }}>{title}</Text>
-        }
-
-        { subtitle && 
-          <Text className={classes.subTitle}>{subtitle}</Text> 
-        }
+        {subtitle && <Text className={classes.subTitle}>{subtitle}</Text>}
 
         {/* <div className={classes.controls}>
           <Button className={classes.control} variant='white' size='lg'>
@@ -68,5 +72,3 @@ const getHeroItems = unstable_cache(
   ['hero-items'],
   { revalidate: 1 }
 )
-
-
