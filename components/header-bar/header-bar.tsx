@@ -4,7 +4,7 @@ import Image from 'next/image'
 import NextLink from 'next/link'
 import { Burger, Container, Drawer, Group, List, rem, ScrollArea } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-import Navigation from '@/components/navigation/navigation'
+import Navigation from '@/components/Navigation/navigation'
 import classes from './header-bar.module.css'
 
 export function HeaderBar() {

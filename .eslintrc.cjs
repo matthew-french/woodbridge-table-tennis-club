@@ -16,5 +16,6 @@ module.exports = {
     'arrow-body-style': 'off',
     'semi': 'off',
     '@typescript-eslint/semi': ['error', 'never'],
+    'singleQuote': 'on',
   },
 }
