@@ -1,7 +1,4 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  },
   "editor.formatOnSave": true,
   "files.exclude": {
     "**/.git": true,
@@ -11,7 +8,6 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true
   },
-  "hide-files.files": [],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "typescript.tsdk": "node_modules/typescript/lib"
+  // "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
